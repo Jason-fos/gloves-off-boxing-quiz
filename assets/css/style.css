@@ -72,3 +72,34 @@
     text-decoration: underline;
     font-size: 300%;
 }
+
+.heading-h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+h2, p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 125%;
+    text-align: center;
+}
+
+#rules-list {
+    font-family: 'Oswald', sans-serif;
+    font-size: 125%;
+}
+
+#logo-link {
+    float: left;
+    margin-left: 25%;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+#rules-button {
+    float: right;
+    margin-right: 25%;
+    font-size: 125%;
+}
