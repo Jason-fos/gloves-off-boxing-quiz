@@ -91,6 +91,13 @@ h2, p {
     font-size: 125%;
 }
 
+#home-page-image {
+    height: auto;
+    width: 100%;
+}
+
+/* footer */
+
 #logo-link {
     float: left;
     margin-left: 25%;
