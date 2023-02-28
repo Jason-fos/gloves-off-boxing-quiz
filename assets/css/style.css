@@ -65,14 +65,31 @@
     clear: both;
     display: table;
 }
- /* home page */
-
+ 
+/* home page */
 
 #home-page-heading {
     font-family: 'Lato', sans-serif;
     text-align: center;
     text-decoration: underline;
     font-size: 300%;
+}
+
+#navbar li {
+    float: left;
+    list-style-type: none;
+    padding-left: 28%;
+    font-size: 175%;
+}
+
+#navbar a {
+    text-decoration: none;
+    border-bottom: 1px, solid;
+    color: antiquewhite;
+}
+
+#navbar a:hover {
+    color: rgb(55, 255, 0);
 }
 
 #main-heading-div {
@@ -116,20 +133,15 @@ h2, p {
 
 /* footer */
 
-#logo-link {
-    float: left;
-    margin-left: 25%;
-    font-size: 150%;
-    text-decoration: none;
-    color: antiquewhite;
+#footer-div {
+    background-color: red;
 }
 
 #rules-button {
-    float: right;
-    margin-right: 20%;
-    font-size: 125%;
+    font-size: 200%;
+    margin-left: 40%;
 }
 
-#footer-div {
-    background-color: red;
+#rules-button:hover {
+    color: rgb(55, 255, 0);
 }
