@@ -66,11 +66,21 @@
     display: table;
 }
  /* home page */
+
+
 #home-page-heading {
     font-family: 'Lato', sans-serif;
     text-align: center;
     text-decoration: underline;
     font-size: 300%;
+}
+
+#main-heading-div {
+    background-color: rgb(255, 0, 0);
+}
+
+#home-text-div {
+    background-color: rgb(0, 110, 255);
 }
 
 .heading-h2 {
@@ -96,6 +106,14 @@ h2, p {
     width: 100%;
 }
 
+#home-image-div {
+    background-color: rgb(0, 110, 255);
+}
+
+#home-section-div {
+    background-color: rgb(0, 110, 255);
+}
+
 /* footer */
 
 #logo-link {
@@ -103,10 +121,15 @@ h2, p {
     margin-left: 25%;
     font-size: 150%;
     text-decoration: none;
+    color: antiquewhite;
 }
 
 #rules-button {
     float: right;
-    margin-right: 25%;
+    margin-right: 20%;
     font-size: 125%;
+}
+
+#footer-div {
+    background-color: red;
 }
