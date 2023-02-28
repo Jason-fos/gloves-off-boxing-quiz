@@ -145,3 +145,11 @@ h2, p {
 #rules-button:hover {
     color: rgb(55, 255, 0);
 }
+
+/* quiz page */
+
+#background-image {
+    background: url(../images/quiz-page-image.jpg) centre centre no-repeat;
+    width: 100%;
+    height: auto;
+}
