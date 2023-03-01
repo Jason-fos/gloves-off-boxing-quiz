@@ -149,7 +149,10 @@ h2, p {
 /* quiz page */
 
 #background-image {
-    background: url(../images/quiz-page-image.jpg) centre centre no-repeat;
-    width: 100%;
+    background: url(../images/quiz-page-image.jpg);
     height: auto;
+}
+
+#game-div {
+    margin: 0, auto;
 }
