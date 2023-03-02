@@ -1,6 +1,8 @@
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&display=swap');
-
+h* {
+    font-family: 'Lato', sans-serif;
+}
 /* responsive grid design code from w3schools */
 * {
     box-sizing: border-box;
@@ -133,6 +135,10 @@ h2, p {
 
 /* footer */
 
+footer {
+    position: sticky;
+}
+
 #footer-div {
     background-color: red;
 }
@@ -148,11 +154,12 @@ h2, p {
 
 /* quiz page */
 
-#background-image {
+#quiz-background {
     background: url(../images/quiz-page-image.jpg);
     height: auto;
+    width: 100%;
 }
 
-#game-div {
-    margin: 0, auto;
+#game-area {
+    height: auto;
 }
