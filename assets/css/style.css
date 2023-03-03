@@ -1,8 +1,10 @@
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&display=swap');
+
 h* {
     font-family: 'Lato', sans-serif;
 }
+
 /* responsive grid design code from w3schools */
 * {
     box-sizing: border-box;
@@ -67,7 +69,7 @@ h* {
     clear: both;
     display: table;
 }
- 
+
 /* home page */
 
 #home-page-heading {
@@ -109,7 +111,8 @@ h* {
     font-size: 200%;
 }
 
-h2, p {
+h2,
+p {
     font-family: 'Oswald', sans-serif;
     font-size: 125%;
     text-align: center;
@@ -156,10 +159,15 @@ footer {
 
 #quiz-background {
     background: url(../images/quiz-page-image.jpg);
-    height: auto;
+    height: 600px;
     width: 100%;
 }
 
 #game-area {
     height: auto;
+    text-align: center;
+}
+
+.diff-btn:hover {
+    background-color: rgb(55, 255, 0);
 }

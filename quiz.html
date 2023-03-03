@@ -32,16 +32,34 @@
         </div>
     </header>
     <!-- quiz game section -->
-    <div id="quiz-background">
-        <div id="game-area">
+    <div class="row" id="quiz-background">
+        <div id="game-area" class="col-9">
             <h2 class="heading-h2">Quiz Time!</h2>
             <p>
                 Please create you're username and select your difficulty.
             </p>
-            <label for="username">Create You're Username:</label>
-            <input type="text" name="username" id="username">
-            <input type="submit" class="submit-btn">
-
+            <div class="col-12" id="username-diff-select">
+                <span>
+                    <label for="username" id="username-label">Create You're Username:</label>
+                    <input type="text" name="username" id="username">
+                </span>
+                <span><button class="diff-btn" id="amateur-diff">Amateur</button></span>
+                <span><button class="diff-btn" id="pro-diff">Pro</button></span>
+                <span><button class="diff-btn" id="undisputed-diff">Undisputed</button></span>
+                <span>
+                    <label for="submit">Confirm selection:</label>
+                    <input type="submit" class="submit-btn" id="submit"></span>
+            </div>
+        </div>
+        <div class="col-3" id="scores-area">
+            <h2 class="heading-h2">High Score</h2>
+            <ol id="scores-results">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
         </div>
     </div>
     <!-- footer section -->
