@@ -165,18 +165,33 @@ footer {
 
 #game-area {
     height: auto;
-    text-align: center;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.701);
+    margin-top: 10rem;
+    margin-left: 5rem;
+    color: antiquewhite;
+    font-size: 1.5rem;
 }
 
 #username-diff-select {
     background-color: rgba(0, 0, 0, 0.76);
 }
 
-#username-diff-select>span {
-    padding-left: 6%;
-}
+/* #username-diff-select>span {
+    padding-left: 30%;
+} */
 
 #username-diff-select {
     color: antiquewhite;
+    text-align: center;
+}
+
+#quiz-question {
+    text-align: center;
+}
+
+#scores-area {
+    background-color: rgba(0, 0, 0, 0.76);
+    color: antiquewhite;
+    margin-top: 4rem;
+    visibility: hidden;
 }
