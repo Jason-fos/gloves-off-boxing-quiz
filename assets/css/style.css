@@ -159,13 +159,14 @@ footer {
 
 #quiz-background {
     background: url(../images/quiz-page-image.jpg);
-    height: 600px;
+    height: 1200px;
     width: 100%;
 }
 
 #game-area {
     height: auto;
     text-align: center;
+    background-color: blue;
 }
 
 .diff-btn:hover {
