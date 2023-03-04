@@ -34,47 +34,43 @@
     <!-- quiz game section -->
     <div id="quiz-background">
         <div class="row">
-            <h2 class="heading-h2">Quiz Time!</h2>
-            <p>
-                Please create you're username and select your difficulty.
-            </p>
             <div class="col-12" id="username-diff-select">
+                <h2 class="heading-h2" id="quiz-heading">Quiz Time!</h2>
+                <p>
+                    Please create you're username and select your difficulty.
+                </p>
                 <span>
                     <label for="username" id="username-label">Create You're Username:</label>
                     <input type="text" name="username" id="username">
                 </span>
-                <span><button class="diff-btn" id="amateur-diff">Amateur</button></span>
-                <span><button class="diff-btn" id="pro-diff">Pro</button></span>
-                <span><button class="diff-btn" id="undisputed-diff">Undisputed</button></span>
+                <span><button class="diff-btn btn" id="amateur-diff">Amateur</button></span>
+                <span><button class="diff-btn btn" id="pro-diff">Pro</button></span>
+                <span><button class="diff-btn btn" id="undisputed-diff">Undisputed</button></span>
                 <span>
                     <label for="submit">Confirm selection:</label>
-                    <input type="submit" class="submit-btn" id="submit"></span>
+                    <input type="submit" class="btn" id="submit"></span>
             </div>
         </div>
         <!-- main game area for quiz-->
         <div id="game-area" class="col-9">
 
         </div>
-    
-    <div class="col-3" id="scores-area">
-        <h2 class="heading-h2">High Score</h2>
-        <ol id="scores-results">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+
+        <div class="col-3" id="scores-area">
+            <h2 class="heading-h2">High Score</h2>
+            <ol id="scores-results">
+
+            </ol>
+        </div>
     </div>
     </div>
-    </div>
-    
+
     <!-- footer section -->
     <section>
-        <div id="footer-div">
+        <div id="footer-div" class="row">
             <footer>
                 <div class="col-12">
-                    <button id="rules-button">Rules and Scoring</button>
+                    <button id="rules-button" class="btn">Rules and Scoring</button>
                 </div>
             </footer>
         </div>
