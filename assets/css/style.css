@@ -155,6 +155,14 @@ footer {
     margin-left: 40%;
 }
 
+#rules-div {
+    background-color: rgba(0, 0, 0, 0.76);
+    margin-left: 23%;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+
 /* quiz page */
 
 #quiz-background {
@@ -170,17 +178,11 @@ footer {
     margin-left: 5rem;
     color: antiquewhite;
     font-size: 1.5rem;
+    /* visibility: hidden; */
 }
 
-#username-diff-select {
+#username-area {
     background-color: rgba(0, 0, 0, 0.76);
-}
-
-/* #username-diff-select>span {
-    padding-left: 30%;
-} */
-
-#username-diff-select {
     color: antiquewhite;
     text-align: center;
 }
