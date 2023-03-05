@@ -118,7 +118,7 @@ p {
     text-align: center;
 }
 
-#rules-list {
+.rules-list {
     font-family: 'Oswald', sans-serif;
     font-size: 125%;
 }
