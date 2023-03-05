@@ -5,7 +5,7 @@ h* {
     font-family: 'Lato', sans-serif;
 }
 
-/* responsive grid design code from w3schools */
+/* responsive grid design, code from w3schools */
 * {
     box-sizing: border-box;
 }
@@ -166,7 +166,7 @@ footer {
     height: 1200px;
     width: 100%;
 }
-
+/* main game area will be hidden by default until a username has been submitted*/
 #game-area {
     height: auto;
     background-color: rgba(0, 0, 255, 0.701);
@@ -203,5 +203,9 @@ footer {
 }
 
 .btn:hover {
+    background-color: rgb(55, 255, 0);
+}
+
+#nextQ-btn:hover {
     background-color: rgb(55, 255, 0);
 }
