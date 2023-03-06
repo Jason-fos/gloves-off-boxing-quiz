@@ -198,7 +198,7 @@ footer {
     float: right;
 }
 
-#nextQ-btn {
+#nextQ-button {
     float: right;
 }
 
@@ -206,6 +206,6 @@ footer {
     background-color: rgb(55, 255, 0);
 }
 
-#nextQ-btn:hover {
+#nextQ-button:hover {
     background-color: rgb(55, 255, 0);
 }

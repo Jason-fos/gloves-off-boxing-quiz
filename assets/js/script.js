@@ -7,37 +7,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let button of buttons) {
         button.addEventListener("click", function () {
-            if (this.id === "rules-button") {
+            if (this.getAttribute("id") === "rules-button") {
                 let rulesDiv = document.getElementById("rules-div");
-
-            } else if (this.id === "submit-username") {
-                createUsername();
-            } else if (this.id === "submit-answer") {
-                checkAnswer()
-            } else if (this.id === "nextQ-btn") {
-                displayNextQuestion()
+                alert("button works");
+                console.log("button works");
+            } else if (this.getAttribute("id") === "submit-username") {
+                alert("button works");
+            } else if (this.getAttribute("id") === "start-quiz") {
+                alert("button works");
+            } else if (this.getAttribute("id") === "submit-answer") {
+                alert("button works");
+            } else if (this.getAttribute("id") === "nextQ-button") {
+                alert("button works");
             }
         })
     }
 })
-
-function createUsername()
-
-function runQuiz()
-
-function checkAnswer()
-
-function correctAnswer()
-
-function wrongAnswer()
-
-function nextQuestion()
-
-
+// variable for position in quiz question array
+let position = 0;
 /**
- * shuffleQuestions function sorts and shuffles the questions array
+ * createUsername function gets the username submitted by the user and
+ * stores it in session storage so it can be added to highscore table on quiz completion
  */
+function createUsername() {
+    let username = document.getElementById("username").innerText;
+}
 
-function shuffleQuestions()
+// function runQuiz()
 
-function
+// function checkAnswer()
+
+// function correctAnswer()
+
+// function wrongAnswer()
+
+function nextQuestion() {
+    document.getElementById("test-status").innerHTML = ("Question " + (position + 1) + " of " + questions.length);
+}
+
+function displayQuestions() {
+    let question = questions[position].question;
+    let choiceA = questions[position].a;
+    let choiceB = questions[position].b;
+    let choiceC = questions[position].c;
+    let choiceD = questions[position].d;
+
+    document.getElementById("quiz-question").innerText = question;
+    document.getElementById("label-optionA").innerText = choiceA;
+    document.getElementById("label-optionB").innerText = choiceB;
+    document.getElementById("label-optionC").innerText = choiceC;
+    document.getElementById("label-optionD").innerText = choiceD;
+}
+
+// function addHighscore()
+
+// function gameOver ()
