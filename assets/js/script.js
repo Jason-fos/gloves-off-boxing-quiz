@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "submit-username") {
                 alert("button works");
             } else if (this.getAttribute("id") === "start-quiz") {
+                displayQuestions();
                 alert("button works");
             } else if (this.getAttribute("id") === "submit-answer") {
                 alert("button works");

@@ -209,3 +209,15 @@ footer {
 #nextQ-button:hover {
     background-color: rgb(55, 255, 0);
 }
+
+#quiz-status {
+    text-align: center;
+}
+
+#timer {
+    text-align: center;
+}
+
+#current-score {
+    text-align: center;
+}
