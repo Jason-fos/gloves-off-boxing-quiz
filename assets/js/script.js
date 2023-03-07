@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("id") === "rules-button") {
-                let rulesDiv = document.getElementById("rules-div");
 
             } else if (this.getAttribute("id") === "submit-username") {
                 createUsername();
             } else if (this.getAttribute("id") === "start-quiz") {
                 displayQuestions();
+                startTimer()
 
             } else if (this.getAttribute("id") === "submit-answer") {
                 checkAnswer()
@@ -25,12 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
+// function toggleRules()
+
 /**
  * createUsername function gets the username submitted by the user and
  * stores it in a variable so it can be used to display the final score on quiz completion
  */
 function createUsername() {
-    let username = document.getElementById("username").innerHTML;
+    let username = document.getElementById("username").innerText;
     console.log(username);
 }
 
@@ -126,35 +128,21 @@ function checkAnswer() {
         }
     }
 }
-
+/**
+ * incrementScore adds 10 pts for each correct answer 
+ */
 function incrementScore() {
     score += 10;
     document.getElementById("current-score").innerText = ("Current Score:" + score);
 }
 
+/**
+ * decrementScore takes 5 pts away for each incorrect answer
+ */
 function decrementScore() {
     score -= 5;
     document.getElementById("current-score").innerText = ("Current Score:" + score);
 }
-
-/**
- * timer function, credit: https://jsfiddle.net/Daniel_Hug/pvk6p/
- * the function updates the timer as time passes
- */
-function timerDetails() {
-    seconds++;
-    if (seconds >= 60) {
-        seconds = 0;
-        minutes++;
-        if (minutes >= 60) {
-            minutes = 0;
-            hours++;
-        }
-    }
-    timer.textContent = "Timer(MM:SS): " + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
-    timerStart();
-}
-// function timerStart()
 
 // function winShowScore()
 

@@ -166,7 +166,7 @@ footer {
     height: 1200px;
     width: 100%;
 }
-/* main game area will be hidden by default until a username has been submitted*/
+/* main game area */
 #game-area {
     height: auto;
     background-color: rgba(0, 0, 255, 0.701);
@@ -174,7 +174,6 @@ footer {
     margin-left: 5rem;
     color: antiquewhite;
     font-size: 1.5rem;
-    /* visibility: hidden; */
 }
 
 #username-area {
@@ -185,13 +184,6 @@ footer {
 
 #quiz-question {
     text-align: center;
-}
-
-#scores-area {
-    background-color: rgba(0, 0, 0, 0.76);
-    color: antiquewhite;
-    margin-top: 4rem;
-    visibility: hidden;
 }
 
 #nextQ-div {
@@ -220,4 +212,10 @@ footer {
 
 #current-score {
     text-align: center;
+}
+
+/* 404 error page */
+
+#error-div {
+    
 }
