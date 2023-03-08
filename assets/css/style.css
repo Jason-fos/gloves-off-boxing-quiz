@@ -70,7 +70,7 @@ h* {
     display: table;
 }
 
-/* home page */
+/* home page  */
 
 #home-page-heading {
     font-family: 'Lato', sans-serif;
@@ -138,10 +138,6 @@ p {
 
 /* footer */
 
-footer {
-    position: sticky;
-}
-
 #footer-div {
     background-color: red;
 }
@@ -203,10 +199,6 @@ footer {
 }
 
 #quiz-status {
-    text-align: center;
-}
-
-#timer {
     text-align: center;
 }
 
