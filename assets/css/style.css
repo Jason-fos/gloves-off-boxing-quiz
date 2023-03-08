@@ -217,5 +217,5 @@ footer {
 /* 404 error page */
 
 #error-div {
-    background: url();
+    background: url(../images/404-image.jpg);
 }

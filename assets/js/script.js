@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 createUsername();
                 alert("Username Submitted");
             } else if (this.getAttribute("id") === "start-quiz") {
-                runQuestions();
+                runQuiz();
             } else if (this.getAttribute("id") === "submit-answer") {
                 checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
 let score = 0;
 let position = 0;
 let currentScore = 0;
+let correctText = `<h3>Correct!</h3>`;
+let wrongtext = `<h3>Wrong!</h3>`;
 
 /**
  * when rules button is clicked
@@ -52,9 +54,10 @@ function createUsername() {
 }
 
 /**
- * runQuestions function starts the quiz 
+ * runQuiz function starts the quiz and is the main structure of the quiz
+ * it calls the next
  */
-function runQuestions() {
+function runQuiz() {
     if (position < questions.length) {
         nextQuestion();
     } else if (currentScore < 0) {
@@ -66,9 +69,10 @@ function runQuestions() {
 
 
 
+
 /**
  * the nextQuestion function changes the content of the html elements
- *  and displays the next question to the user
+ *  and displays the next question to the user along with the 4 potential answers
  */
 function nextQuestion() {
     document.getElementById("quiz-status").innerHTML = ("Question " + (position + 1) + " of " + questions.length);
@@ -84,6 +88,7 @@ function nextQuestion() {
     document.getElementById("label-optionB").innerHTML = choiceB;
     document.getElementById("label-optionC").innerHTML = choiceC;
     document.getElementById("label-optionD").innerHTML = choiceD;
+   
 
 }
 
@@ -155,13 +160,20 @@ function decrementScore() {
     document.getElementById("current-score").innerText = ("Current Score:" + score);
 }
 
+/**
+ * winShowScore function provides the user with a congratulatory message and there final score
+ * takes the currentScore value and adds it to the HTML using template literal
+ */
 function winShowScore() {
     let winMessage = `<h2>Congratulations ${username.value} You Completed The Quiz!</h2>
     <p>You're Score: ${currentScore}</p>`;
     document.getElementById("game-area").innerHTML = winMessage;
 }
 
-
+/**
+ * gameOver function provides the user with a commiserations message
+ * uses template literal to use the users username in the message
+ */
 function gameOver() {
     let gameOverMessage = `<h2>Unlucky ${username.value} You Lose!</h2>
     <p>Better luck next time, click start quiz button to try again.</p>`
