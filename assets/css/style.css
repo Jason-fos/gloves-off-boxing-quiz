@@ -151,12 +151,12 @@ footer {
     margin-left: 40%;
 }
 
-#rules-div {
+#rules-toggle {
     background-color: rgba(0, 0, 0, 0.76);
-    margin-left: 23%;
     color: antiquewhite;
+    text-align: left;
     font-size: 1.2rem;
-    visibility: hidden;
+    display: none;
 }
 
 /* quiz page */
@@ -217,5 +217,5 @@ footer {
 /* 404 error page */
 
 #error-div {
-    
+    background: url();
 }
