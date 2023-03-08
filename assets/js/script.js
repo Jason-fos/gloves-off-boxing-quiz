@@ -11,12 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 toggleRules();
             } else if (this.getAttribute("id") === "submit-username") {
                 createUsername();
+                alert("Username Submitted");
             } else if (this.getAttribute("id") === "start-quiz") {
-                startTimer();
+                runQuestions();
             } else if (this.getAttribute("id") === "submit-answer") {
-                checkAnswer()
+                checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
-                nextQuestion()
+                nextQuestion();
             }
         })
     }
@@ -50,14 +51,24 @@ function createUsername() {
     console.log(username);
 }
 
-// function runQuestions() {
-//    
-//
-//}
+/**
+ * runQuestions function starts the quiz 
+ */
+function runQuestions() {
+    if (position < questions.length) {
+        nextQuestion();
+    } else if (currentScore < 0) {
+        gameOver();
+    } else {
+        winShowScore();
+    }
+}
+
+
 
 /**
  * the nextQuestion function changes the content of the html elements
- *  and displays the next question to the user when called by runQuestions function
+ *  and displays the next question to the user
  */
 function nextQuestion() {
     document.getElementById("quiz-status").innerHTML = ("Question " + (position + 1) + " of " + questions.length);
@@ -68,19 +79,19 @@ function nextQuestion() {
     let choiceC = questions[position].c;
     let choiceD = questions[position].d;
 
-    document.getElementById("quiz-question").innerHTML = (position + 1 + ". " + "<span>" + question + "</span>");
+    document.getElementById("quiz-question").innerHTML = (position + 1 + ". " + question);
     document.getElementById("label-optionA").innerHTML = choiceA;
     document.getElementById("label-optionB").innerHTML = choiceB;
     document.getElementById("label-optionC").innerHTML = choiceC;
     document.getElementById("label-optionD").innerHTML = choiceD;
-    position++;
+
 }
 
 /**
  * the checkAnswer function checks answers to each question
-  updates the allAnswers array with this information
-  if correct the user is alerted and score increments by 10pts
- if incorrect the user is alerted and score decrements by 5pts
+ * updates the allAnswers array with this information
+ * if correct the score increments by 10pts
+ * if incorrect the score decrements by 5pts
  */
 let allAnswers = [];
 allAnswers[0] = [];
@@ -111,20 +122,20 @@ function checkAnswer() {
     for (let chosen = 0; chosen < choices.length; chosen++) {
         if (choices[chosen].checked) {
             let usersAnswer = choices[chosen].nextElementSibling.innerHTML;
+            console.log(usersAnswer);
             allAnswers[answerInfo][0] = questions[position].question;
             allAnswers[answerInfo][1] = usersAnswer;
             allAnswers[answerInfo][2] = questions[position].answer;
 
             if (usersAnswer === questions[position].answer) {
-                alert("Well Done, Correct Answer!")
                 incrementScore();
                 currentScore += 10;
             } else {
-                alert("Ooops, Wrong answer!")
                 decrementScore();
                 currentScore -= 10;
             }
-            // answerInformation++;
+            answerInfo++;
+            position++;
         }
     }
 }
@@ -145,14 +156,14 @@ function decrementScore() {
 }
 
 function winShowScore() {
-    let winMessage = `<h2>${username} You Completed The Quiz</h2>
+    let winMessage = `<h2>Congratulations ${username.value} You Completed The Quiz!</h2>
     <p>You're Score: ${currentScore}</p>`;
     document.getElementById("game-area").innerHTML = winMessage;
 }
 
 
 function gameOver() {
-    let gameOver = `<h2>${username} You Lose!</h2>
+    let gameOverMessage = `<h2>Unlucky ${username.value} You Lose!</h2>
     <p>Better luck next time, click start quiz button to try again.</p>`
-    document.getElementById("game-area").innerHTML = gameOver;
+    document.getElementById("game-area").innerHTML = gameOverMessage;
 }
