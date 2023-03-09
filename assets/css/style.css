@@ -163,6 +163,10 @@ p {
     width: 100%;
 }
 
+#submit-username {
+    margin-right: 2rem;
+}
+
 /* main game area */
 #game-area {
     height: auto;
@@ -220,6 +224,39 @@ p {
 }
 
 /* media queries */
+/* screen size 1025px and below */
+@media screen and (max-width: 1025px) {
+    #home-image-div {
+        background-color: rgb(0, 110, 255);
+        margin-top: 5rem;
+    }
+
+    #game-area {
+        height: auto;
+        background-color: rgba(0, 0, 255, 0.701);
+        margin-top: 10rem;
+        margin-left: 7.5rem;
+        color: antiquewhite;
+        font-size: 1.5rem;
+    }
+
+    #rules-button {
+        font-size: 200%;
+        margin-left: 21.5rem;
+    }
+
+    #navbar li {
+        float: left;
+        list-style-type: none;
+        padding-left: 25%;
+        font-size: 175%;
+    }
+
+    #submit-username {
+        margin-right: 1rem;
+    }
+}
+
 /* screen size 770px and below */
 @media screen and (max-width: 770px) {
     #navbar li {
@@ -232,6 +269,11 @@ p {
     #rules-button {
         font-size: 200%;
         margin-left: 14rem;
+    }
+
+    #home-image-div {
+        background-color: rgb(0, 110, 255);
+        margin-top: 0;
     }
 
     #home-page-image {
@@ -260,6 +302,7 @@ p {
     }
 
 }
+
 /* screen size 600px and below */
 @media screen and (max-width: 600px) {
     #navbar li {
@@ -330,6 +373,13 @@ p {
     #home-image-div {
         background-color: rgb(0, 110, 255);
         width: 100%;
+        margin: 0;
+    }
+
+    #home-page-image {
+        height: auto;
+        width: 100%;
+        margin-top: 0;
     }
 
     #rules-button {
@@ -392,6 +442,13 @@ p {
     #home-image-div {
         background-color: rgb(0, 110, 255);
         width: 100%;
+        margin: 0;
+    }
+
+    #home-page-image {
+        height: auto;
+        width: 100%;
+        margin-top: 0;
     }
 
     #submit-username {
@@ -445,6 +502,13 @@ p {
     #home-image-div {
         background-color: rgb(0, 110, 255);
         width: 100%;
+        margin: 0;
+    }
+
+    #home-page-image {
+        height: auto;
+        width: 100%;
+        margin-top: 0;
     }
 
     #rules-button {
