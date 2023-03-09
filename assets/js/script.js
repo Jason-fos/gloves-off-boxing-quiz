@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
                 nextQuestion();
+                document.getElementById("right-wrong-text").innerHTML = clearText;
             }
         })
     }
@@ -27,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 let score = 0;
 let position = 0;
 let currentScore = 0;
-let correctText = `<h3>Correct!</h3>`;
-let wrongtext = `<h3>Wrong!</h3>`;
+let correctText = `<h3>Correct Answer!</h3>`;
+let wrongText = `<h3>Wrong Answer!</h3>`;
+let clearText = `<h3></h3>`;
 
 /**
  * when rules button is clicked
@@ -135,9 +137,11 @@ function checkAnswer() {
             if (usersAnswer === questions[position].answer) {
                 incrementScore();
                 currentScore += 10;
+                document.getElementById("right-wrong-text").innerHTML = correctText;
             } else {
                 decrementScore();
                 currentScore -= 10;
+                document.getElementById("right-wrong-text").innerHTML = wrongText;
             }
             answerInfo++;
             position++;
