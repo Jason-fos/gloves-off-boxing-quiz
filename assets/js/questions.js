@@ -1,4 +1,4 @@
-let questions = [{
+const questions = [{
         //Question 1
         question: "What boxing weight class is heaviest?",
         a: "Fly weight",
