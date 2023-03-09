@@ -245,4 +245,37 @@ p {
         font-size: 150%;
         margin-left: 10%;
     }
+    
+    /* quiz page */
+    #start-quiz {
+        margin-top: 10%;
+    }
+
+    #game-area {
+        height: auto;
+        background-color: rgba(0, 0, 255, 0.701);
+        margin-top: 2.5rem;
+        margin-left: 0;
+        color: antiquewhite;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #current-score {
+        text-align: center;
+        width: 100%;
+    }
+
+    #right-wrong-text {
+        text-align: center;
+        color: antiquewhite;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #quiz-status {
+        text-align: center;
+        width: 100%;
+    }
+
 }

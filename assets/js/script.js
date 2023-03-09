@@ -140,7 +140,8 @@ function checkAnswer() {
                 document.getElementById("right-wrong-text").innerHTML = wrongText;
                 document.getElementById("right-wrong-text").style.backgroundColor = "red";
             }
-            runQuiz();           answerInfo++;
+            runQuiz();
+            answerInfo++;
             position++;
 
         }
@@ -180,6 +181,6 @@ function winShowScore() {
  */
 function gameOver() {
     let gameOverMessage = `<h2>Unlucky ${username.value} You Lose!</h2>
-    <p>Better luck next time, click start quiz button to try again.</p>`
+    <p>Better luck next time.</p>`
     document.getElementById("game-area").innerHTML = gameOverMessage;
 }
