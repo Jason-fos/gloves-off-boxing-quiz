@@ -206,6 +206,12 @@ p {
     text-align: center;
 }
 
+#right-wrong-text {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 1.2rem;
+}
+
 /* 404 error page */
 
 #error-div {
