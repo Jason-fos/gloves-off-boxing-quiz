@@ -19,87 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "nextQ-button") {
                 nextQuestion();
                 document.getElementById("right-wrong-text").innerHTML = clearText;
+                document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
             }
         })
     }
 })
 
-// quiz variables
+// variables
 let score = 0;
 let position = 0;
 let currentScore = 0;
 let correctText = `<h3>Correct Answer!</h3>`;
 let wrongText = `<h3>Wrong Answer!</h3>`;
 let clearText = `<h3></h3>`;
-
-/**
- * when rules button is clicked
- * toggleRules function hides and displays a div with rules recap
- */
-function toggleRules() {
-    let r = document.getElementById("rules-toggle");
-    if (r.style.display === "none") {
-        r.style.display = "block";
-    } else {
-        r.style.display = "none";
-    }
-}
-
-/**
- * createUsername function gets the username submitted by the user and
- * stores it in a variable so it can be used to display the final score on quiz completion
- */
-function createUsername() {
-    let username = document.getElementById("username").value;
-
-    console.log(username);
-}
-
-/**
- * runQuiz function starts the quiz and is the main structure of the quiz
- * it calls the next
- */
-function runQuiz() {
-    if (position < questions.length) {
-        nextQuestion();
-    } else if (currentScore < 0) {
-        gameOver();
-    } else {
-        winShowScore();
-    }
-}
-
-
-
-
-/**
- * the nextQuestion function changes the content of the html elements
- *  and displays the next question to the user along with the 4 potential answers
- */
-function nextQuestion() {
-    document.getElementById("quiz-status").innerHTML = ("Question " + (position + 1) + " of " + questions.length);
-
-    let question = questions[position].question;
-    let choiceA = questions[position].a;
-    let choiceB = questions[position].b;
-    let choiceC = questions[position].c;
-    let choiceD = questions[position].d;
-
-    document.getElementById("quiz-question").innerHTML = (position + 1 + ". " + question);
-    document.getElementById("label-optionA").innerHTML = choiceA;
-    document.getElementById("label-optionB").innerHTML = choiceB;
-    document.getElementById("label-optionC").innerHTML = choiceC;
-    document.getElementById("label-optionD").innerHTML = choiceD;
-   
-
-}
-
-/**
- * the checkAnswer function checks answers to each question
- * updates the allAnswers array with this information
- * if correct the score increments by 10pts
- * if incorrect the score decrements by 5pts
- */
 let allAnswers = [];
 allAnswers[0] = [];
 allAnswers[1] = [];
@@ -121,8 +53,71 @@ allAnswers[16] = [];
 allAnswers[17] = [];
 allAnswers[18] = [];
 allAnswers[19] = [];
-let answerInfo = 0
+let answerInfo = 0;
 
+/**
+ * when the rules button is clicked it calls the toggleRules function
+ * which hides or displays a div with the rules and scoring in as recap to user if needed
+ */
+function toggleRules() {
+    let r = document.getElementById("rules-toggle");
+    if (r.style.display === "none") {
+        r.style.display = "block";
+    } else {
+        r.style.display = "none";
+    }
+}
+
+/**
+ * createUsername function gets the username submitted by the user and
+ * stores it in a variable so it can be used to display the final score on quiz completion
+ */
+function createUsername() {
+    let username = document.getElementById("username").value;
+}
+
+/**
+ * runQuiz function starts the quiz and is the main structure of the quiz
+ * it calls the nextQuestion function to display the first question
+ * if currentScore drops below 0 it calls gameOver function to display the game over message on screen to user
+ * otherwise it will call the winShowScore function and provide a congratulations message to user
+ */
+function runQuiz() {
+    if (position < questions.length) {
+        nextQuestion();
+    } else if (currentScore < 0) {
+        gameOver();
+    } else {
+        winShowScore();
+    }
+}
+
+/**
+ * the nextQuestion function changes the content of the html elements
+ *  and displays the next question to the user along with the 4 potential answers
+ */
+function nextQuestion() {
+    document.getElementById("quiz-status").innerHTML = ("Question " + (position + 1) + " of " + questions.length);
+
+    let question = questions[position].question;
+    let choiceA = questions[position].a;
+    let choiceB = questions[position].b;
+    let choiceC = questions[position].c;
+    let choiceD = questions[position].d;
+
+    document.getElementById("quiz-question").innerHTML = (position + 1 + ". " + question);
+    document.getElementById("label-optionA").innerHTML = choiceA;
+    document.getElementById("label-optionB").innerHTML = choiceB;
+    document.getElementById("label-optionC").innerHTML = choiceC;
+    document.getElementById("label-optionD").innerHTML = choiceD;
+}
+
+/**
+ * the checkAnswer function checks the answers to each question
+ * updates the allAnswers array with this information
+ * if correct the score increments by 10pts and displays correct answer message to user
+ * if incorrect the score decrements by 10pts and displays wrong answer message to user
+ */
 function checkAnswer() {
     let choices = document.getElementsByName("choices");
 
@@ -138,10 +133,12 @@ function checkAnswer() {
                 incrementScore();
                 currentScore += 10;
                 document.getElementById("right-wrong-text").innerHTML = correctText;
+                document.getElementById("right-wrong-text").style.backgroundColor = "green";
             } else {
                 decrementScore();
                 currentScore -= 10;
                 document.getElementById("right-wrong-text").innerHTML = wrongText;
+                document.getElementById("right-wrong-text").style.backgroundColor = "red";
             }
             answerInfo++;
             position++;
