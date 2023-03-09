@@ -220,7 +220,65 @@ p {
 }
 
 /* media queries */
-/* screen size 375px and below*/
+/* screen size 430px and below */
+
+@media screen and (max-width: 430px) {
+    #navbar li {
+        float: left;
+        list-style-type: none;
+        padding-left: 10%;
+        font-size: 175%;
+    }
+
+    #home-text-div {
+        background-color: rgb(0, 110, 255);
+        width: 100%;
+    }
+
+    #home-image-div {
+        background-color: rgb(0, 110, 255);
+        width: 100%;
+    }
+
+    #rules-button {
+        font-size: 150%;
+        margin-left: 5.4rem;
+    }
+
+    #start-quiz {
+        margin-top: 1.5rem;
+    }
+
+    #game-area {
+        height: auto;
+        background-color: rgba(0, 0, 255, 0.701);
+        margin-top: 5rem;
+        margin-left: 0;
+        color: antiquewhite;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #current-score {
+        text-align: center;
+        width: 100%;
+    }
+
+    #right-wrong-text {
+        text-align: center;
+        color: antiquewhite;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #quiz-status {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* screen size 380px and below */
+
 @media screen and (max-width: 380px) {
     #navbar li {
         float: left;
