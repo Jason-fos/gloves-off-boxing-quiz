@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "submit-answer") {
                 checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
-                nextQuestion();
+                runQuiz();
                 document.getElementById("right-wrong-text").innerHTML = clearText;
                 document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
             }
@@ -83,10 +83,10 @@ function createUsername() {
  * otherwise it will call the winShowScore function and provide a congratulations message to user
  */
 function runQuiz() {
-    if (position < questions.length) {
-        nextQuestion();
-    } else if (currentScore < 0) {
+    if (score < 0) {
         gameOver();
+    } else if (position < questions.length) {
+        nextQuestion();
     } else {
         winShowScore();
     }
@@ -140,8 +140,9 @@ function checkAnswer() {
                 document.getElementById("right-wrong-text").innerHTML = wrongText;
                 document.getElementById("right-wrong-text").style.backgroundColor = "red";
             }
-            answerInfo++;
+            runQuiz();           answerInfo++;
             position++;
+
         }
     }
 }
@@ -162,7 +163,8 @@ function decrementScore() {
 }
 
 /**
- * winShowScore function provides the user with a congratulatory message and there final score
+ * winShowScore function changes the quiz-area html
+ * provides the user with a congratulatory message and there final score
  * takes the currentScore value and adds it to the HTML using template literal
  */
 function winShowScore() {
@@ -172,7 +174,8 @@ function winShowScore() {
 }
 
 /**
- * gameOver function provides the user with a commiserations message
+ * gameOver function changes the quiz-area html
+ *  provides the user with a commiserations message
  * uses template literal to use the users username in the message
  */
 function gameOver() {
