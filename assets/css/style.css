@@ -220,7 +220,47 @@ p {
 }
 
 /* media queries */
-/* screen size 600px and below*/
+/* screen size 770px and below */
+@media screen and (max-width: 770px) {
+    #navbar li {
+        float: left;
+        list-style-type: none;
+        padding-left: 9rem;
+        font-size: 175%;
+    }
+
+    #rules-button {
+        font-size: 200%;
+        margin-left: 14rem;
+    }
+
+    #home-page-image {
+        height: auto;
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    #game-area {
+        height: auto;
+        background-color: rgba(0, 0, 255, 0.701);
+        margin-top: 10rem;
+        margin-left: 5.5rem;
+        color: antiquewhite;
+        font-size: 1.5rem;
+    }
+
+    #game-area {
+        height: auto;
+        background-color: rgba(0, 0, 255, 0.701);
+        margin-top: 10rem;
+        margin-left: 1rem;
+        color: antiquewhite;
+        font-size: 1.5rem;
+        width: 95%;
+    }
+
+}
+/* screen size 600px and below */
 @media screen and (max-width: 600px) {
     #navbar li {
         float: left;
