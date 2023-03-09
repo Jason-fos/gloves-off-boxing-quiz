@@ -162,6 +162,7 @@ p {
     height: 1200px;
     width: 100%;
 }
+
 /* main game area */
 #game-area {
     height: auto;
@@ -216,4 +217,32 @@ p {
 
 #error-div {
     background: url(../images/404-image.jpg);
+}
+
+/* media queries */
+
+/* screen size 320px and below */
+@media screen and (max-width: 320px) {
+  /* home page */
+    #navbar li {
+        float: left;
+        list-style-type: none;
+        padding-left: 1rem;
+        font-size: 125%;
+    }
+
+    #home-text-div {
+        background-color: rgb(0, 110, 255);
+        width: 100%;
+    }
+
+    #home-image-div {
+        background-color: rgb(0, 110, 255);
+        width: 100%;
+    }
+
+    #rules-button {
+        font-size: 150%;
+        margin-left: 10%;
+    }
 }
