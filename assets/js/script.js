@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("right-wrong-text").innerHTML = clearText;
                 document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
             }
-        })
+        });
     }
-})
+});
 
 // variables
 let score = 0;
@@ -74,6 +74,7 @@ function toggleRules() {
  */
 function createUsername() {
     let username = document.getElementById("username").value;
+    console.log(username);
 }
 
 /**
@@ -168,7 +169,7 @@ function decrementScore() {
  * takes the currentScore value and adds it to the HTML using template literal
  */
 function winShowScore() {
-    let winMessage = `<h2>Congratulations ${username.value} You Completed The Quiz!</h2>
+    let winMessage = `<h2>Congratulations ${"username"} You Completed The Quiz!</h2>
     <p>You're Score: ${currentScore}</p>`;
     document.getElementById("game-area").innerHTML = winMessage;
 }
@@ -179,7 +180,7 @@ function winShowScore() {
  *  it uses template literal to display the users username in the message
  */
 function gameOver() {
-    let gameOverMessage = `<h2>Unlucky ${username.value} You Lose!</h2>
-    <p>Better luck next time.</p>`
+    let gameOverMessage = `<h2>Unlucky ${"username"} You Lose!</h2>
+    <p>Better luck next time.</p>`;
     document.getElementById("game-area").innerHTML = gameOverMessage;
 }
