@@ -219,7 +219,14 @@ p {
 /* 404 error page */
 
 #error-div {
-    background: url(../images/404-image.jpg);
+    background: url(../images/404-image.jpg) center center no-repeat;
+    height: 26rem;
+}
+
+#error-text {
+    text-align: center;
+    color: red;
+    font-size: 200%;
 }
 
 /* media queries */
