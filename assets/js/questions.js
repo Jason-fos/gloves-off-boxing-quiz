@@ -1,3 +1,6 @@
+/**
+ * questions.js holds all the questions and answers used in the quiz
+ */
 const questions = [{
         //Question 1
         question: "What boxing weight class is heaviest?",
