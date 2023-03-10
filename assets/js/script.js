@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
 // variables
 let score = 0;
 let position = 0;
