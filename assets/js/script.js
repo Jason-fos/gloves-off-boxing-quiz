@@ -57,7 +57,7 @@ let answerInfo = 0;
 
 /**
  * when the rules button is clicked it calls the toggleRules function
- * which hides or displays a div with the rules and scoring in as recap to user if needed
+ * which hides or displays a div with the rules and scoring in for user to refer to if needed
  */
 function toggleRules() {
     let r = document.getElementById("rules-toggle");
@@ -70,17 +70,17 @@ function toggleRules() {
 
 /**
  * createUsername function gets the username submitted by the user and
- * stores it in a variable so it can be used to display the final score on quiz completion
+ * stores it in a variable so it can be used to display the final win/lose message and score on quiz completion
  */
 function createUsername() {
     let username = document.getElementById("username").value;
 }
 
 /**
- * runQuiz function starts the quiz and is the main structure of the quiz
+ * runQuiz function starts and ends the quiz
  * it calls the nextQuestion function to display the first question
  * if currentScore drops below 0 it calls gameOver function to display the game over message on screen to user
- * otherwise it will call the winShowScore function and provide a congratulations message to user
+ * otherwise it will call the winShowScore function and provide a congratulations message to user along with their final score
  */
 function runQuiz() {
     if (score < 0) {
@@ -114,7 +114,7 @@ function nextQuestion() {
 
 /**
  * the checkAnswer function checks the answers to each question
- * updates the allAnswers array with this information
+ * adds the information to the allAnswers array
  * if correct the score increments by 10pts and displays correct answer message to user
  * if incorrect the score decrements by 10pts and displays wrong answer message to user
  */
@@ -124,7 +124,6 @@ function checkAnswer() {
     for (let chosen = 0; chosen < choices.length; chosen++) {
         if (choices[chosen].checked) {
             let usersAnswer = choices[chosen].nextElementSibling.innerHTML;
-            console.log(usersAnswer);
             allAnswers[answerInfo][0] = questions[position].question;
             allAnswers[answerInfo][1] = usersAnswer;
             allAnswers[answerInfo][2] = questions[position].answer;
@@ -176,8 +175,8 @@ function winShowScore() {
 
 /**
  * gameOver function changes the quiz-area html
- *  provides the user with a commiserations message
- * uses template literal to use the users username in the message
+ *  provides the user with a game over message
+ *  it uses template literal to display the users username in the message
  */
 function gameOver() {
     let gameOverMessage = `<h2>Unlucky ${username.value} You Lose!</h2>
