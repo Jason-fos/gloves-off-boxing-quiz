@@ -170,7 +170,7 @@ function decrementScore() {
  * takes the currentScore value and adds it to the HTML using template literal
  */
 function winShowScore() {
-    let winMessage = `<h2>Congratulations ${"username"} You Completed The Quiz!</h2>
+    let winMessage = `<h2>Congratulations ${username} You Completed The Quiz!</h2>
     <p>You're Score: ${currentScore}</p>`;
     document.getElementById("game-area").innerHTML = winMessage;
 }
@@ -181,7 +181,7 @@ function winShowScore() {
  *  it uses template literal to display the users username in the message
  */
 function gameOver() {
-    let gameOverMessage = `<h2>Unlucky ${"username"} You Lose!</h2>
+    let gameOverMessage = `<h2>Unlucky ${username} You Lose!</h2>
     <p>Better luck next time.</p>`;
     document.getElementById("game-area").innerHTML = gameOverMessage;
 }
