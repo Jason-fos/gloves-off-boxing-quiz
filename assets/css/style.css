@@ -157,7 +157,9 @@ p {
 /* quiz page */
 
 #quiz-background {
-    background: url(../images/quiz-page-image.jpg) no repeat center;
+    background-image: url(../images/quiz-page-image.jpg);
+    background-position: center;
+    background-size: cover;
     height: 1200px;
     width: 100%;
 }
@@ -171,6 +173,7 @@ p {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+    visibility: hidden;
 }
 
 #submit-username {
