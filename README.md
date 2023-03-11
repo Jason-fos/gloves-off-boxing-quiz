@@ -73,7 +73,7 @@
 1. As a site user, I want to be able to find the quiz page easily.
 2. As a site user, I want to be able to find and read the rules easily.
 3. As a site user, I want to know if my answer was correct or not.
-4. As a site user, I want to be able see my final score.
+4. As a site user, I want to be able see my score.
 5. As a site user, I want to be able to create a username.
 6. As a site user, I want to know my progress during the quiz.
 
@@ -279,79 +279,72 @@ The website was tested on the following browsers:
 
 <details><summary>Screenshots</summary>
 <img src="docs/user-story-testing/user-story-1.png">
-<img src="docs/user-story-testing/user-story1.1.png">
+<img src="docs/user-story-testing/user-story-1.1.png">
 </details>
 
 2. As a site user, I want to be able to find and read the rules easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Rules and Scoring | Clearly displayed on the home page | Provide information on the rules and scoring | Works as expected |
+| Rules and Scoring section | Clearly displayed on the home page | Provide information on the rules and scoring | Works as expected |
+| Toggle rules button in footer | Click rules button in footer | Toggle the rules from hidden to visible | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story2.png">
+<img src="docs/user-story-testing/user-story-2.png">
+<img src="docs/user-story-testing/user-story-2.1.png">
+<img src="docs/user-story-testing/user-story-2.2.png">
+
 </details>
 
 3.  As a site user, I want to know if my answer was correct or not.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| right/wrong message| click submit answer button in the quiz | Locate information about location of the company | Works as expected |
-| Map | Click the About us link from the navigation menu, scroll down to map | Find company address on a map | Works as expected |
+| right/wrong message| click submit answer button in the quiz | Display right or wrong answer message to user | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story3.png">
-<img src="docs/user-story-testing/user-story3-mid.png">
-<img src="docs/user-story-testing/user-story3-map.png">
+<img src="docs/user-story-testing/user-story-3.png">
+<img src="docs/user-story-testing/user-story3.1.png">
 </details>
 
-4. As a site user, I want to be able see my final score.
+4. As a site user, I want to be able see my score.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Our services | Click the Our services link from the navigation menu | Find images of the companies previous work | Works as expected |
-| Footer - socials | On any page scroll down to the footer | Find social media accounts | Works as expected |
+| Current Score | Top left corner of the quiz area provides a score | Display the score to the user | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story4.png">
-<img src="docs/user-story-testing/user-story4-servpage.png">
-<img src="docs/user-story-testing/user-story4-scroll.png">
-<img src="docs/user-story-testing/user-story4-socials.png">
+<img src="docs/user-story-testing/user-story-4.png">
 </details>
 
 5.As a site user, I want to be able to create a username.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact us | Click the About us link from the navigation menu | Locate contact us section | Works as expected |
+| Create username | Click go to quiz in nav menu, enter username where prompted and click submit | Create a username | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story5.png">
-<img src="docs/user-story-testing/user-story5-contact.png">
+<img src="docs/user-story-testing/user-story-5.png">
+<img src="docs/user-story-testing/user-story-5.1.png">
 </details>
 
 6. As a site user, I want to know my progress during the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Free quote form | Click the Free quote link from the navigation menu | Locate free quote page | Works as expected |
-| Footer - Free quote link | On any page scroll to the bottom to find the footer | Locate free quote link in footer | Works as expected |
+| Quiz progress | Top right corner of quiz area displays quiz progress | To display the quiz progress to the user | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story6.png">
-<img src="docs/user-story-testing/user-story6-form.png">
-<img src="docs/user-story-testing/user-story6-scroll.png">
-<img src="docs/user-story-testing/user-story6-footer.png">
+<img src="docs/user-story-testing/user-story-6.png">
 </details>
 
 7.As the site owner, I want users to be able to navigate the site with ease.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact us | Click the About us link from the navigation menu | Locate contact details | Works as expected |
+| Navigation bar | Click links in nav menu | Navigate around the site | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story7.png">
-<img src="docs/user-story-testing/user-story7-contact.png">
+<img src="docs/user-story-testing/user-story-7.png">
 </details>
 
 8. As the site owner, I want to display relevant information clearly to the 
@@ -359,22 +352,23 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About us | Click the About us link from the navigation menu | Promote/advertise company ideals | Works as expected |
+| Rules and scoring section | Clearly displayed on home page | Clearly display information to the user | Works as expected |
+| Quiz area | go to quiz page and start quiz | Clearly display information to the user | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story8-home.png">
-<img src="docs/user-story-testing/user-story8-about.png">
+<img src="docs/user-story-testing/user-story-8.png">
+<img src="docs/user-story-testing/user-story-8.1.png">
 </details>
 
 9. As the site owner, I want users to be displayed with a game over or win message on quiz completion.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| 404 page | Click any link in navigation bar to return to site | Prevent user from using browser back arrows | Works as expected |
+| Game over/Win message | Lose or complete the quiz | Display game over or win message to user | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story8-home.png">
-<img src="docs/user-story-testing/user-story8-about.png">
+<img src="docs/user-story-testing/user-story-9.png">
+<img src="docs/user-story-testing/user-story-9.1.png">
 </details>
 
 10. As the site owner, I dont want the user to use the browser back arrow when 
@@ -385,7 +379,7 @@ The website was tested on the following browsers:
 | 404 page | Click any link in navigation bar to return to site | Prevent user from using browser back arrows | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/404page.png">
+<img src="docs/user-story-testing/user-story-10.png">
 </details>
 
 ## Bugs
