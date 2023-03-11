@@ -1,7 +1,7 @@
 # Gloves off: Boxing Quiz
 (Developer: Jason Foster)
 
-![Mockup image](../gloves-off-boxing-quiz/docs/validation/am-i-responsive-image.png)
+![Mockup image](/docs/validation/am-i-responsive-image.png)
 
 [Live webpage]()
 
@@ -75,11 +75,11 @@
 3. As a site user, I want to be able to see if my answer selection was correct or not.
 4. As a site user, I want to be able see my final score.
 5. As a site user, I want to be able to create a username.
-6. As a site user, I want the questions and answers to be clearly displayed.
+6. As a site user, I want to know my progress during the quiz.
 
 #### Site Owner 
 7. As the site owner, I want users to be able to navigate the site with ease.
-8. As the site owner, I want to display relevant information to the user.
+8. As the site owner, I want to display relevant information clearly to the user.
 9. As the site owner, I dont want the user to use the browser back arrow when no page is found.
 10. As the site owner, I want users to be displayed with a personalised game over or win message on quiz completion.
 
@@ -110,30 +110,20 @@ The website consists of 3 separate pages:
 
 ### Wireframes
 
-<details><summary>Home</summary>
-<img src="docs/wireframes/homepage-desktop.png">
-<img src="docs/wireframes/homepage-ipad.png">
-<img src="docs/wireframes/homepage-iphone.png">
+<details><summary>Home Page</summary>
+<img src="docs/wireframes/home-page-desktop.png">
+<img src="docs/wireframes/home-page-ipad.png">
+<img src="docs/wireframes/home-page-mobile.png">
 </details>
-<details><summary>Our services</summary>
-<img src="docs/wireframes/our-services-desktop.png">
-<img src="docs/wireframes/our-services-ipad.png">
-<img src="docs/wireframes/our-services-iphone.png">
+<details><summary>Quiz Page</summary>
+<img src="docs/wireframes/quiz-page-desktop.png">
+<img src="docs/wireframes/quiz-page-ipad.png">
+<img src="docs/wireframes/quiz-page-mobile.png">
 </details>
-<details><summary>About us</summary>
-<img src="docs/wireframes/about-us-desktop.png">
-<img src="docs/wireframes/about-us-ipad.png">
-<img src="docs/wireframes/about-us-iphone.png">
-</details>
-<details><summary>Free Quote</summary>
-<img src="docs/wireframes/quote-form-desktop.png">
-<img src="docs/wireframes/quote-form-ipad.png">
-<img src="docs/wireframes/quote-form-iphone.png">
-</details>
-<details><summary>404 error page</summary>
-<img src="docs/wireframes/404page-desktop.png">
-<img src="docs/wireframes/404page-ipad.png">
-<img src="docs/wireframes/404page-iphone.png">
+<details><summary>404 Error Page</summary>
+<img src="docs/wireframes/404-page-desktop.png">
+<img src="docs/wireframes/404-page-ipad.png">
+<img src="docs/wireframes/404-page-mobile.png">
 </details>
 
 ## Technologies Used
@@ -141,6 +131,7 @@ The website consists of 3 separate pages:
 ### Languages
 - HTML
 - CSS
+- Javascript
 
 ### Frameworks & Tools
 - Git
@@ -149,84 +140,79 @@ The website consists of 3 separate pages:
 - Balsamiq
 - Google Fonts
 - Adobe Color
-- Font Awsome
 - Favicon<span>.</span>io
+- Python tutor
 
 ## Features
-The page consists of four pages and nine features
+The page consists of 3 pages and 9 features.
 
 ### Logo and Navigation Bar
-- Featured on all four pages
+- Featured on all 3 pages
 - The navbar is responsive and changes to suit the users screen.
-- It includes links to the Homepage, Our services page, About us page and Free quote form page.
+- It includes links to the Homepage and the Quiz page.
 - It allows users to easily navigate around the page.
-- The links highlight and underline green on mouseover so user knows its interactive. 
+- The links highlight green on mouseover so user knows its interactive. 
+- User stories covered: 1, 7
 
-![Logo and navbar](/docs/features/logo-navbar-image.png)
+![Logo and navbar](/docs/features/logo-navbar.png)
 
-### Home Page Image
-- Introduces the user to the page with an eye cathcing image of a high end property and driveway.
-- Allows the user to see very briefly the style and type of work done by the company.
-- User stories covered: 8
+### Rules and Scoring section
+- Gives a brief description of the quiz.
+- Allows the user to read the rules and see how the quiz is scored.
+- User stories covered: 2, 8
 
-![home page image](/docs/features/home-page-image.png)
+![rules and scoring section](/docs/features/rules-scoring-section.png)
 
-### What We Do
-- Allows users to read a brief description of some of the services provided as well as a brief intro into the company.
-- There is an image each of some surfacing materials and a rear garden with a swimming pool so users can see a small image of 
-  services provided.
-- There are 3 links, 1 for driveways and surfacing services, 1 for garden and outdoor spaces services and another for the about
-  us section.  
-- User stories covered: 1, 2, 3, 8
+### Rules and scoring toggle button
+- Allows users to recap the rules and scoring by clicking the button in the footer.
+- The div with rules and scoring in  is hidden by default.
+- When clicked the div with the rules and scoring in is made visible. 
+- User stories covered: 2, 8
 
-![What we do](/docs/features/what-we-do-image.png)
+![rules and scoring toggle button](/docs/features/footer-toggle-rules-button.png)
+![rules and scoring toggle button](/docs/features/footer-toggle-rules-button2.png)
 
-### Footer
-- Features on all 4 pages.
-- Contains links to social media accounts allowing users to find more info and images about the company.
-- Link to the free quote form in the footer allowing the user to start a quote.
-- User stories covered: 1, 6
+### Create Username
+- Allows the user to create a username for the quiz.
+- Allows the quiz the display personalised win or lose mesage to the user.
+- User stories covered: 5, 10 
 
-![footer](/docs/features/footer-image.png)
+![create username](/docs/features/create-username.png)
 
-### Our Services
-- Contains text detailing the services and works provided clearly to the user.
-- Contains images to show the user the quality of works provided
-- User stories covered: 2, 4, 8
+### Right Or Wrong Answer Message To User
+- Displays to the user whether the question they just answered was right or wrong.
+- User stories covered: 3, 8
 
-![our services](/docs/features/our-services-images2.png)
-![our services](/docs/features/our-services-images.png)
+![right or wrong answer message](/docs/features/correct-answer-message.png)
+![right or wrong answer message](/docs/features/wrong-answer-message.png)
 
+### Current Score
+- Current score increments up and down by 10pts depending on correct or incorrect answers from the user.
+- Allows user to keep track of their score throughout the quiz.
+- If score goes below 0 game over message is displayed to the user.
+- User stories covered: 4, 8
 
-### About Us
-- Gives a description of the company, its qualities and ideals so the user can better understand the company.
-- User stories covered: 1, 3
+![current score](/docs/features/current-score.png)
 
-![About Us](/docs/features/about-us-image.png)
+### Quiz Question Progress
+- The progress of the quiz is displayed to the user by displaying what question they are on and how many there are.
+- User stories covered: 6, 8
 
-### Contact Us
-- Features clear information for users to contact the company.
-- User stories covered: 5, 7
+![quiz question progress](/docs/features/quiz-progress.png)
 
-![contact us](/docs/features/contact-us-image.png)
+### Game Over Or Win Display
+- Provides the user with a personalised game over message using the submitted username.
+-  Provides the user with a personalised win message showing their final score using the submitted username.
+- User stories covered: 4, 10
 
-### Embedded Google Map
-- Embedded google map providing location of the company to the user.
-- User stories covered: 3, 7
-
-![embedded google map](/docs/features/map-image.png)
-
-### Free Quote Form
-- Allows the user to arrange a free quote for the service they are wanting.
-- User stories covered: 6
-
-![free quote form](/docs/features/quote-form-image.png)
+![game over or win display](/docs/features/win-display-finalscore.png)
+![game over or win display](/docs/features/gameover-display.png)
 
 ### 404 error page
 - Allows the user to navigate back to home page without using browser back arrow.
 - User stories covered: 9
 
-![404 error page](/docs/features/404page.png)
+![404 error page](/docs/features/404-page.png)
 
 
 ## Validation
