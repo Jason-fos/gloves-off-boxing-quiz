@@ -33,6 +33,7 @@ let currentScore = 0;
 let correctText = `<h3>Correct Answer!</h3>`;
 let wrongText = `<h3>Wrong Answer!</h3>`;
 let clearText = `<h3></h3>`;
+let username = "";
 let allAnswers = [];
 allAnswers[0] = [];
 allAnswers[1] = [];
@@ -70,12 +71,11 @@ function toggleRules() {
 }
 
 /**
- * createUsername function gets the username submitted by the user and
- * stores it in a variable so it can be used to display the final win/lose message and score on quiz completion
- */
+* createUsername function gets the username submitted by the user and
+* stores it in a variable so it can be used to display the final win/lose message and score on quiz completion
+*/
 function createUsername() {
-    let username = document.getElementById("username").value;
-    console.log(username);
+    username = document.getElementById("username").value;
 }
 
 /**
