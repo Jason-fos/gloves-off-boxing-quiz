@@ -34,7 +34,9 @@
         </div>
     </header>
     <!-- quiz game section -->
-    <div id="quiz-background" title="An empty boxing ring, with some hanging punchbags">
+    <div id="quiz-background">
+        <img src="../gloves-off-boxing-quiz/assets/images/quiz-page-image.jpg"
+            alt="An empty boxing ring wth punchbags hanging from the ceiling" class="sr-only">
         <div class="row">
             <div class="col-12" id="username-area">
                 <h2 class="heading-h2" id="quiz-heading">Quiz Time!</h2>
@@ -49,47 +51,48 @@
                 <button class="btn" id="start-quiz">Start Quiz</button>
             </div>
         </div>
-        <!-- main game area for quiz-->
-        <div id="game-area" class="col-9">
-            <div class="row">
-                <!-- status area, current score, current question -->
-                <div class="col-12" id="status-area">
-                    <div class="col-4" id="current-score">Current Score:</div>
-                    <div class="col-4" id="right-wrong-text"></div>
-                    <div class="col-4" id="quiz-status"></div>
-                </div>
-            </div>
-            <!-- quiz question area -->
-            <div id="quiz-question"></div>
-            <div id="quiz-options">
-                <form id="quiz-form">
-                    <fieldset>
-                        <legend id=legend_text>Choices:</legend>
-                        <input type="radio" id="optionA" name="choices" value="a">
-                        <label id="label-optionA" class="option" for="optionA">A</label><br>
-
-                        <input type="radio" id="optionB" name="choices" value="b">
-                        <label id="label-optionB" class="option" for="optionB">B</label><br>
-
-                        <input type="radio" id="optionC" name="choices" value="c">
-                        <label id="label-optionC" class="option" for="optionC">C</label><br>
-
-                        <input type="radio" id="optionD" name="choices" value="d">
-                        <label id="label-optionD" class="option" for="optionD">D</label><br>
-                        <div id="error-message"></div>
-                    </fieldset>
-                </form>
-            </div>
-            <!-- submit answer area -->
-            <div class="row">
-                <div class="col-6">
-                    <button id="submit-answer" class="btn">Submit Answer</button>
-                </div>
-                <div class="col-6" id="nextQ-div">
-                    <button id="nextQ-button" class="btn">Next Question</button>
-                </div>
+    </div>
+    <!-- main game area for quiz-->
+    <div id="game-area" class="col-9">
+        <div class="row">
+            <!-- status area, current score, current question -->
+            <div class="col-12" id="status-area">
+                <div class="col-4" id="current-score">Current Score:</div>
+                <div class="col-4" id="right-wrong-text"></div>
+                <div class="col-4" id="quiz-status"></div>
             </div>
         </div>
+        <!-- quiz question area -->
+        <div id="quiz-question"></div>
+        <div id="quiz-options">
+            <form id="quiz-form">
+                <fieldset>
+                    <legend id=legend_text>Choices:</legend>
+                    <input type="radio" id="optionA" name="choices" value="a">
+                    <label id="label-optionA" class="option" for="optionA">A</label><br>
+
+                    <input type="radio" id="optionB" name="choices" value="b">
+                    <label id="label-optionB" class="option" for="optionB">B</label><br>
+
+                    <input type="radio" id="optionC" name="choices" value="c">
+                    <label id="label-optionC" class="option" for="optionC">C</label><br>
+
+                    <input type="radio" id="optionD" name="choices" value="d">
+                    <label id="label-optionD" class="option" for="optionD">D</label><br>
+                    <div id="error-message"></div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- submit answer area -->
+        <div class="row">
+            <div class="col-6">
+                <button id="submit-answer" class="btn">Submit Answer</button>
+            </div>
+            <div class="col-6" id="nextQ-div">
+                <button id="nextQ-button" class="btn">Next Question</button>
+            </div>
+        </div>
+    </div>
     </div>
 
 
