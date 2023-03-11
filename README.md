@@ -235,6 +235,13 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 <img src="docs/validation/css-validation.png">
 </details>
 
+### Javascript
+The javascript files were checked using jshint, it shows no errors or undefined variables.
+<details><summary>script.js, questions.js</summary>
+<img src="docs/validation/jshint.png">
+</details>
+
+
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with no errors.
 <details><summary>Home Page</summary>
@@ -386,16 +393,14 @@ The website was tested on the following browsers:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| None of the images load on page | Change all file paths to absolute paths |
-| favicon icon not loading | Change file path to absolute path |
-| Navbar links overflow on xs screen | Add a media query to remove the left margin and reduce left padding of the li elements in the navbar on xs screen |
+| None of the images load on page | Change all file paths to absolute paths | Home page image too large causing performance issues | Reduce the image size |
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab.
 2. On the left hand menu select Pages.
 3. For the source select Branch: master.
-4. After the webpage refreshes automaticaly you will see a ribbon on the top saying: "Your site is published at (https://jason-fos.github.io/JLF-construction-services/)
+4. After the webpage refreshes automaticaly you will see a ribbon on the top saying: "Your site is published at (https://jason-fos.github.io/gloves-off-boxing-quiz/)
 
 You can fork the repository by following these steps:
 1. Go to the GitHub repository.
@@ -414,6 +419,9 @@ You can clone the repository by following these steps:
 
 ### Media
 - All images taken from pexels.com
+- W3CSchools.com was used for compatability of form components
+- Questions formthe quiz came from (https://www.radiotimes.com/ 
+  quizzes/pub-quiz-boxing)
   
 ### Code
 - 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
