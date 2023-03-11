@@ -72,7 +72,7 @@
 #### Site User 
 1. As a site user, I want to be able to find the quiz page easily.
 2. As a site user, I want to be able to find and read the rules easily.
-3. As a site user, I want to be able to see if my answer selection was correct or not.
+3. As a site user, I want to know if my answer was correct or not.
 4. As a site user, I want to be able see my final score.
 5. As a site user, I want to be able to create a username.
 6. As a site user, I want to know my progress during the quiz.
@@ -81,7 +81,7 @@
 7. As the site owner, I want users to be able to navigate the site with ease.
 8. As the site owner, I want to display relevant information clearly to the user.
 9. As the site owner, I dont want the user to use the browser back arrow when no page is found.
-10. As the site owner, I want users to be displayed with a personalised game over or win message on quiz completion.
+10. As the site owner, I want users to be displayed with a game over or win message on quiz completion.
 
 ## Design
 
@@ -93,13 +93,11 @@ The webpage was designed to be eye catching, easy to navigate and clearly displa
 For the colour scheme bold colours were chosen to catch users attention. The red and blue was chosen as it represents the red and blue corners of a boxing ring. 
 <br>
 
-![Colour scheme]()
-
 ### Fonts
 
-Lato was used for the headings as it looks good in a larger font size and is easy to read. 
+Lato was used for the headings as i think it looks good in a larger font size and it is easy to read. 
 <br>
-Oswald was used for all other text as it compliments the headings nicely and is highly readable on screen, both have back up font of sans-serif as its also easily readable on screen.
+Oswald was used for text as it compliments the headings nicely and is easily readable on screen, both have back up font of sans-serif as its also easily readable on screen.
 
 ### Structure
 The page is structured in a recognizable, user friendly and easy to learn way. on arriving to the site the user sees a logo with a navigation bar, with the links spaced out under the logo that highlight on mouse over.
@@ -142,6 +140,7 @@ The website consists of 3 separate pages:
 - Adobe Color
 - Favicon<span>.</span>io
 - Python tutor
+- Chrome Devtools
 
 ## Features
 The page consists of 3 pages and 9 features.
@@ -201,8 +200,8 @@ The page consists of 3 pages and 9 features.
 ![quiz question progress](/docs/features/quiz-progress.png)
 
 ### Game Over Or Win Display
-- Provides the user with a personalised game over message using the submitted username.
--  Provides the user with a personalised win message showing their final score using the submitted username.
+- Provides the user with a game over message using the submitted username.
+-  Provides the user with a win message showing their username and final score.
 - User stories covered: 4, 10
 
 ![game over or win display](/docs/features/win-display-finalscore.png)
@@ -272,36 +271,32 @@ The website was tested on the following browsers:
 - Microsoft Egde
 
 ### Testing user stories
-1. As a first time user, I want to find out more about the company.
+1. As a site user, I want to find the quiz page easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About us | Click the About us link from the navigation menu | Locate information about the company | Works as expected |
-| Footer - Socials | On any page scroll down to the footer | Find social media accounts | Works as expected |
+| Navigation link | Click the Go To Quiz link from the navigation menu | Take user to the quiz page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story1.png">
-<img src="docs/user-story-testing/user-story1about.png">
-<img src="docs/user-story-testing/user-story1scroll.png">
-<img src="docs/user-story-testing/user-story1footer.png">
+<img src="docs/user-story-testing/user-story-1.png">
+<img src="docs/user-story-testing/user-story1.1.png">
 </details>
 
-2. As a first time user, I want to find out what services are provided.
+2. As a site user, I want to be able to find and read the rules easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Our services | Click the Our services link from the navigation menu | Locate information about the services provided | Works as expected |
+| Rules and Scoring | Clearly displayed on the home page | Provide information on the rules and scoring | Works as expected |
 
 <details><summary>Screenshots</summary>
 <img src="docs/user-story-testing/user-story2.png">
-<img src="docs/user-story-testing/user-story2-servpage.png">
 </details>
 
-3.  As a first time user, I want to find out where the company is based.
+3.  As a site user, I want to know if my answer was correct or not.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About us, Contact us | Click the About us link from the navigation menu | Locate information about location of the company | Works as expected |
+| right/wrong message| click submit answer button in the quiz | Locate information about location of the company | Works as expected |
 | Map | Click the About us link from the navigation menu, scroll down to map | Find company address on a map | Works as expected |
 
 <details><summary>Screenshots</summary>
@@ -310,7 +305,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story3-map.png">
 </details>
 
-4. As a first time user, I want to see the quality of the work provided.
+4. As a site user, I want to be able see my final score.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -324,8 +319,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story4-socials.png">
 </details>
 
-5. As a returning user, I want to contact the company.
-
+5.As a site user, I want to be able to create a username.
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Contact us | Click the About us link from the navigation menu | Locate contact us section | Works as expected |
@@ -335,7 +329,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story5-contact.png">
 </details>
 
-6. As a returning user, I want to arrange a quote.
+6. As a site user, I want to know my progress during the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -349,7 +343,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story6-footer.png">
 </details>
 
-7. As the site owner, I want users to be able to contact us easily.
+7.As the site owner, I want users to be able to navigate the site with ease.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -360,7 +354,8 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story7-contact.png">
 </details>
 
-8. As the site owner, I want to advertise and promote the companies qualities.
+8. As the site owner, I want to display relevant information clearly to the 
+   user.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -371,7 +366,19 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story8-about.png">
 </details>
 
-9. As the site owner, I dont want the user to use the browser back arrow when no page is found.
+9. As the site owner, I want users to be displayed with a game over or win message on quiz completion.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 page | Click any link in navigation bar to return to site | Prevent user from using browser back arrows | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story8-home.png">
+<img src="docs/user-story-testing/user-story8-about.png">
+</details>
+
+10. As the site owner, I dont want the user to use the browser back arrow when 
+   no page is found.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
