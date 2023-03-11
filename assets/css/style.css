@@ -157,7 +157,7 @@ p {
 /* quiz page */
 
 #quiz-background {
-    /* background: url(../images/quiz-page-image.jpg); */
+    background: url(../images/quiz-page-image.jpg) no repeat center;
     height: 1200px;
     width: 100%;
 }
