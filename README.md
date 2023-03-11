@@ -218,66 +218,50 @@ The page consists of 3 pages and 9 features.
 ## Validation
 
 ### HTML Validation
-The W3C Markup Validation Service was used to validate the HTML of the website, entire site passed with 0 errors or warnings.
-<details><summary>Home</summary>
-<img src="docs/validation/homepage.html.validation.png">
+The W3C Markup Validation Service was used to validate the HTML of the website. index.html had 2 errors, 1 spelling error and 1 stray div closing tag. 
+<details><summary>Home Page</summary>
+<img src="docs/validation/index-html-errors.png">
+<img src="docs/validation/index.html-validation.png">
 </details>
-<details><summary>Our services</summary>
-<img src="docs/validation/our-services-html-validation.png">
+<details><summary>Quiz Page</summary>
+<img src="docs/validation/quiz.html-validation.png">
 </details>
-<details><summary>About us</summary>
-<img src="docs/validation/about-us-html-validation.png">
-</details>
-<details><summary>Free quote</summary>
-<img src="docs/validation/form-html-validation.png">
-</details>
-<details><summary>404 page</summary>
-<img src="docs/validation/404-html-validation.png">
+<details><summary>404 Page</summary>
+<img src="docs/validation/404.html-validation.png">
 </details>
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
-<details><summary>CSS file (style.css)</summary>
-<img src="docs/validation/w3c-css-validation.png">
+<details><summary>CSS File (style.css)</summary>
+<img src="docs/validation/css-validation.png">
 </details>
 
 ### Accessibility
-The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages had 4 contrast errors due to the font of the navbar links being too small or not bold enough. Easily fixed by making link headings bold.
-<details><summary>errors</summary>
-<img src="docs/validation/accessibility-errors.png">
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with no errors.
+<details><summary>Home Page</summary>
+<img src="docs/validation/index.html-wave.png">
 </details>
-<details><summary>Home</summary>
-<img src="docs/validation/wave-home.png">
+<details><summary>Quiz Page</summary>
+<img src="docs/validation/quiz.html-wave.png">
 </details>
-<details><summary>Our services</summary>
-<img src="docs/validation/wave-our-services.png">
-</details>
-<details><summary>About us</summary>
-<img src="docs/validation/wave-about-us.png">
-</details>
-<details><summary>Free quote form</summary>
-<img src="docs/validation/wave-quote-form.png">
+<details><summary>404 Page</summary>
+<img src="docs/validation/404.html-wave.png">
 </details>
 
 ### Performance 
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
 
-<details><summary>Home</summary>
-<img src="docs/validation/lighthouse-homepage.png">
+<details><summary>Home Page</summary>
+<img src="docs/validation/index.html-lighthouse.png">
 </details>
-<details><summary>Our services</summary>
-<img src="docs/validation/lighthouse-our-services.png">
-</details>
-<details><summary>About us</summary>
-<img src="docs/validation/lighthouse-about-us.png">
-</details>
-<details><summary>Free quote form</summary>
-<img src="docs/validation/lighthouse-quote-form.png">
+<details><summary>Quiz Page</summary>
+<img src="docs/validation/quiz.html-lighthouse.png">
 </details>
 
 ### Performing tests on various devices 
 The website was tested on the following devices:
 - Samsung A5
+- Samsung A22
 - Acer Aspire 3
 
 In addition, the website was tested using Google Chrome Developer Tools Device Toggeling option for all available device options.
