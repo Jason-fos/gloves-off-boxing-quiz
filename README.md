@@ -1,9 +1,9 @@
 # Gloves off: Boxing Quiz
 (Developer: Jason Foster)
 
-![Mockup image](docs/am-i-responsive-image.png)
+![Mockup image](../gloves-off-boxing-quiz/docs/validation/am-i-responsive-image.png)
 
-[Live webpage](https://jason-fos.github.io/JLF-construction-services/)
+[Live webpage]()
 
 ## Table of Content
 
@@ -40,22 +40,22 @@
 ## Project Goals 
 
 ### User Goals
-- Finding a local, reliable construction company.
-- Finding information about the company and its ideals.
-- To see the quality of the work provided.
-- To be able to get a quote for work wanted.
+- Play a challenging and entertaining quiz game.
+- Learn some new facts about boxing.
+- Get a final score on completion.
+- Have fun.
 
 ### Site Owner Goals
-- Increase the number of customers it has.
-- Promote/advertise the company.
-- Provide a way for customers to contact the company.
-- Provide information about the company to customers.
+- Increase the number of users it has.
+- An easy to navigate and read site for users.
+- Provide users with relative information about the site.
+- Clearly displayed game area with questions and answers.
 
 ## User Experience
 
 ### Target Audience
-- People wanting a new driveway or garden area.
-- People needing any type of building maintenance or repair work carried out.
+- Anyone looking to take part in an online quiz game.
+- Boxing fans.
 
 ### User Requirements and Expectations
 
@@ -63,26 +63,25 @@
 - Quickly and easily find relevant information.
 - Links and functions should work as expected.
 - A well presented and visually appealing design regardless of screen size.
-- An easy way to contact the company.
+- Clearly dispalyed and easily read questions and answers.
 - Simple content that doesnt overwhelm the user.
 - Accessibility and performance.
 
 ### User Stories
 
-#### First-time User 
-1. As a first time user, I want to find out more about the company.
-2. As a first time user, I want to know what services are provided.
-3. As a first time user, I want to find out where the company is based.
-4. As a first time user, I want to see the quality of the work provided.
-
-#### Returning User
-5. As a returning user, I want to contact the company.
-6. As a returning user, I want to arrange a quote.
+#### Site User 
+1. As a site user, I want to be able to find the quiz page easily.
+2. As a site user, I want to be able to find and read the rules easily.
+3. As a site user, I want to be able to see if my answer selection was correct or not.
+4. As a site user, I want to be able see my final score.
+5. As a site user, I want to be able to create a username.
+6. As a site user, I want the questions and answers to be clearly displayed.
 
 #### Site Owner 
-7. As the site owner, I want users to be able to contact us easily.
-8. As the site owner, I want to advertise and promote the companies qualities.
+7. As the site owner, I want users to be able to navigate the site with ease.
+8. As the site owner, I want to display relevant information to the user.
 9. As the site owner, I dont want the user to use the browser back arrow when no page is found.
+10. As the site owner, I want users to be displayed with a personalised game over or win message on quiz completion.
 
 ## Design
 
