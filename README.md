@@ -1,108 +1,457 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Gloves off: Boxing Quiz
+(Developer: Jason Foster)
 
-Welcome Jason-fos,
+![Mockup image](docs/am-i-responsive-image.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage](https://jason-fos.github.io/JLF-construction-services/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Content
 
-## Gitpod Reminders
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Project Goals 
 
-`python3 -m http.server`
+### User Goals
+- Finding a local, reliable construction company.
+- Finding information about the company and its ideals.
+- To see the quality of the work provided.
+- To be able to get a quote for work wanted.
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
+- Increase the number of customers it has.
+- Promote/advertise the company.
+- Provide a way for customers to contact the company.
+- Provide information about the company to customers.
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Target Audience
+- People wanting a new driveway or garden area.
+- People needing any type of building maintenance or repair work carried out.
 
-A blue button should appear to click: _Make Public_,
+### User Requirements and Expectations
 
-Another blue button should appear to click: _Open Browser_.
+- A simple and easy to use navigation system.
+- Quickly and easily find relevant information.
+- Links and functions should work as expected.
+- A well presented and visually appealing design regardless of screen size.
+- An easy way to contact the company.
+- Simple content that doesnt overwhelm the user.
+- Accessibility and performance.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories
 
-To log into the Heroku toolbelt CLI:
+#### First-time User 
+1. As a first time user, I want to find out more about the company.
+2. As a first time user, I want to know what services are provided.
+3. As a first time user, I want to find out where the company is based.
+4. As a first time user, I want to see the quality of the work provided.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Returning User
+5. As a returning user, I want to contact the company.
+6. As a returning user, I want to arrange a quote.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Site Owner 
+7. As the site owner, I want users to be able to contact us easily.
+8. As the site owner, I want to advertise and promote the companies qualities.
+9. As the site owner, I dont want the user to use the browser back arrow when no page is found.
 
-------
+## Design
 
-## Release History
+### Design Choices
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The webpage was designed to be eye catching, informative and easy to navigate around.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Colour
+For the colour scheme bright colours were chosen to catch the users eye and draw attention
+to information and links on the page. Green and blue was chosen as they are visually pleasing positive on screen colours and the light grey in the header and footer is a neutral colour that goes well with the colours on the page. 
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Colour scheme](docs/features/colour-pallete-adobe.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Fonts
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Playfair+Display was used for the logo and headings as it looks good in a larger font size and is easy to read. 
+<br>
+Merriweather was used for the body text as it compliments the headings nicely and is highly readable on screen, both have back up font of sans-serif as its also easily readable on screen.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Structure
+The page is structured in a recognizable, user friendly and easy to learn way. on arriving to the site the user sees a logo with a navigation bar, with the links spaced out under the logo that highlight on mouse over.
+The website consists of four separate pages: 
+- A homepage with a section of What we do, small paragraph explaining what we do with images and links to our services page.
+- An our services page consisting of images and information detailing the services provided.
+- An about us page with a contact us section.
+- A free quote (form) page which opens in a new tab.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Wireframes
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<details><summary>Home</summary>
+<img src="docs/wireframes/homepage-desktop.png">
+<img src="docs/wireframes/homepage-ipad.png">
+<img src="docs/wireframes/homepage-iphone.png">
+</details>
+<details><summary>Our services</summary>
+<img src="docs/wireframes/our-services-desktop.png">
+<img src="docs/wireframes/our-services-ipad.png">
+<img src="docs/wireframes/our-services-iphone.png">
+</details>
+<details><summary>About us</summary>
+<img src="docs/wireframes/about-us-desktop.png">
+<img src="docs/wireframes/about-us-ipad.png">
+<img src="docs/wireframes/about-us-iphone.png">
+</details>
+<details><summary>Free Quote</summary>
+<img src="docs/wireframes/quote-form-desktop.png">
+<img src="docs/wireframes/quote-form-ipad.png">
+<img src="docs/wireframes/quote-form-iphone.png">
+</details>
+<details><summary>404 error page</summary>
+<img src="docs/wireframes/404page-desktop.png">
+<img src="docs/wireframes/404page-ipad.png">
+<img src="docs/wireframes/404page-iphone.png">
+</details>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Technologies Used
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Languages
+- HTML
+- CSS
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Frameworks & Tools
+- Git
+- GitHub
+- Gitpod
+- Balsamiq
+- Google Fonts
+- Adobe Color
+- Font Awsome
+- Favicon<span>.</span>io
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Features
+The page consists of four pages and nine features
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Logo and Navigation Bar
+- Featured on all four pages
+- The navbar is responsive and changes to suit the users screen.
+- It includes links to the Homepage, Our services page, About us page and Free quote form page.
+- It allows users to easily navigate around the page.
+- The links highlight and underline green on mouseover so user knows its interactive. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Logo and navbar](/docs/features/logo-navbar-image.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Home Page Image
+- Introduces the user to the page with an eye cathcing image of a high end property and driveway.
+- Allows the user to see very briefly the style and type of work done by the company.
+- User stories covered: 8
 
-------
+![home page image](/docs/features/home-page-image.png)
 
-## FAQ about the uptime script
+### What We Do
+- Allows users to read a brief description of some of the services provided as well as a brief intro into the company.
+- There is an image each of some surfacing materials and a rear garden with a swimming pool so users can see a small image of 
+  services provided.
+- There are 3 links, 1 for driveways and surfacing services, 1 for garden and outdoor spaces services and another for the about
+  us section.  
+- User stories covered: 1, 2, 3, 8
 
-**Why have you added this script?**
+![What we do](/docs/features/what-we-do-image.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Footer
+- Features on all 4 pages.
+- Contains links to social media accounts allowing users to find more info and images about the company.
+- Link to the free quote form in the footer allowing the user to start a quote.
+- User stories covered: 1, 6
 
-**How will this affect me?**
+![footer](/docs/features/footer-image.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Our Services
+- Contains text detailing the services and works provided clearly to the user.
+- Contains images to show the user the quality of works provided
+- User stories covered: 2, 4, 8
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![our services](/docs/features/our-services-images2.png)
+![our services](/docs/features/our-services-images.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### About Us
+- Gives a description of the company, its qualities and ideals so the user can better understand the company.
+- User stories covered: 1, 3
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![About Us](/docs/features/about-us-image.png)
 
-**Can I opt out?**
+### Contact Us
+- Features clear information for users to contact the company.
+- User stories covered: 5, 7
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![contact us](/docs/features/contact-us-image.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Embedded Google Map
+- Embedded google map providing location of the company to the user.
+- User stories covered: 3, 7
 
-**Anything more?**
+![embedded google map](/docs/features/map-image.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Free Quote Form
+- Allows the user to arrange a free quote for the service they are wanting.
+- User stories covered: 6
 
----
+![free quote form](/docs/features/quote-form-image.png)
 
-Happy coding!
+### 404 error page
+- Allows the user to navigate back to home page without using browser back arrow.
+- User stories covered: 9
+
+![404 error page](/docs/features/404page.png)
+
+
+## Validation
+
+### HTML Validation
+The W3C Markup Validation Service was used to validate the HTML of the website, entire site passed with 0 errors or warnings.
+<details><summary>Home</summary>
+<img src="docs/validation/homepage.html.validation.png">
+</details>
+<details><summary>Our services</summary>
+<img src="docs/validation/our-services-html-validation.png">
+</details>
+<details><summary>About us</summary>
+<img src="docs/validation/about-us-html-validation.png">
+</details>
+<details><summary>Free quote</summary>
+<img src="docs/validation/form-html-validation.png">
+</details>
+<details><summary>404 page</summary>
+<img src="docs/validation/404-html-validation.png">
+</details>
+
+### CSS Validation
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+<details><summary>CSS file (style.css)</summary>
+<img src="docs/validation/w3c-css-validation.png">
+</details>
+
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages had 4 contrast errors due to the font of the navbar links being too small or not bold enough. Easily fixed by making link headings bold.
+<details><summary>errors</summary>
+<img src="docs/validation/accessibility-errors.png">
+</details>
+<details><summary>Home</summary>
+<img src="docs/validation/wave-home.png">
+</details>
+<details><summary>Our services</summary>
+<img src="docs/validation/wave-our-services.png">
+</details>
+<details><summary>About us</summary>
+<img src="docs/validation/wave-about-us.png">
+</details>
+<details><summary>Free quote form</summary>
+<img src="docs/validation/wave-quote-form.png">
+</details>
+
+### Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
+
+<details><summary>Home</summary>
+<img src="docs/validation/lighthouse-homepage.png">
+</details>
+<details><summary>Our services</summary>
+<img src="docs/validation/lighthouse-our-services.png">
+</details>
+<details><summary>About us</summary>
+<img src="docs/validation/lighthouse-about-us.png">
+</details>
+<details><summary>Free quote form</summary>
+<img src="docs/validation/lighthouse-quote-form.png">
+</details>
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+- Samsung A5
+- Acer Aspire 3
+
+In addition, the website was tested using Google Chrome Developer Tools Device Toggeling option for all available device options.
+
+### Browser compatability
+The website was tested on the following browsers:
+- Google Chrome
+- Microsoft Egde
+
+### Testing user stories
+1. As a first time user, I want to find out more about the company.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About us | Click the About us link from the navigation menu | Locate information about the company | Works as expected |
+| Footer - Socials | On any page scroll down to the footer | Find social media accounts | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story1.png">
+<img src="docs/user-story-testing/user-story1about.png">
+<img src="docs/user-story-testing/user-story1scroll.png">
+<img src="docs/user-story-testing/user-story1footer.png">
+</details>
+
+2. As a first time user, I want to find out what services are provided.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Our services | Click the Our services link from the navigation menu | Locate information about the services provided | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story2.png">
+<img src="docs/user-story-testing/user-story2-servpage.png">
+</details>
+
+3.  As a first time user, I want to find out where the company is based.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About us, Contact us | Click the About us link from the navigation menu | Locate information about location of the company | Works as expected |
+| Map | Click the About us link from the navigation menu, scroll down to map | Find company address on a map | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story3.png">
+<img src="docs/user-story-testing/user-story3-mid.png">
+<img src="docs/user-story-testing/user-story3-map.png">
+</details>
+
+4. As a first time user, I want to see the quality of the work provided.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Our services | Click the Our services link from the navigation menu | Find images of the companies previous work | Works as expected |
+| Footer - socials | On any page scroll down to the footer | Find social media accounts | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story4.png">
+<img src="docs/user-story-testing/user-story4-servpage.png">
+<img src="docs/user-story-testing/user-story4-scroll.png">
+<img src="docs/user-story-testing/user-story4-socials.png">
+</details>
+
+5. As a returning user, I want to contact the company.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact us | Click the About us link from the navigation menu | Locate contact us section | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story5.png">
+<img src="docs/user-story-testing/user-story5-contact.png">
+</details>
+
+6. As a returning user, I want to arrange a quote.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Free quote form | Click the Free quote link from the navigation menu | Locate free quote page | Works as expected |
+| Footer - Free quote link | On any page scroll to the bottom to find the footer | Locate free quote link in footer | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story6.png">
+<img src="docs/user-story-testing/user-story6-form.png">
+<img src="docs/user-story-testing/user-story6-scroll.png">
+<img src="docs/user-story-testing/user-story6-footer.png">
+</details>
+
+7. As the site owner, I want users to be able to contact us easily.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact us | Click the About us link from the navigation menu | Locate contact details | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story7.png">
+<img src="docs/user-story-testing/user-story7-contact.png">
+</details>
+
+8. As the site owner, I want to advertise and promote the companies qualities.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About us | Click the About us link from the navigation menu | Promote/advertise company ideals | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story8-home.png">
+<img src="docs/user-story-testing/user-story8-about.png">
+</details>
+
+9. As the site owner, I dont want the user to use the browser back arrow when no page is found.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 page | Click any link in navigation bar to return to site | Prevent user from using browser back arrows | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/404page.png">
+</details>
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| None of the images load on page | Change all file paths to absolute paths |
+| favicon icon not loading | Change file path to absolute path |
+| Navbar links overflow on xs screen | Add a media query to remove the left margin and reduce left padding of the li elements in the navbar on xs screen |
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab.
+2. On the left hand menu select Pages.
+3. For the source select Branch: master.
+4. After the webpage refreshes automaticaly you will see a ribbon on the top saying: "Your site is published at (https://jason-fos.github.io/JLF-construction-services/)
+
+You can fork the repository by following these steps:
+1. Go to the GitHub repository.
+2. Click on Fork button in upper right hand corner.
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository. 
+2. Find the Code button above the list of files and click it. 
+3. Select which you prefer, clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the copied URL.
+7. Press Enter to create your local clone.
+
+## Credits
+
+### Media
+- All images taken from pexels.com
+  
+### Code
+- 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
+
+## Acknowledgements
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his advice, guidance and support.
+- My partner and friends for helping with testing and giving valuable feedback.
+- Code institute as a whole for the support they provide.
