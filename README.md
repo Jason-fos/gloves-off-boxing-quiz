@@ -87,28 +87,26 @@
 
 ### Design Choices
 
-The webpage was designed to be eye catching, informative and easy to navigate around.
+The webpage was designed to be eye catching, easy to navigate and clearly display relevant information.
 
 ### Colour
-For the colour scheme bright colours were chosen to catch the users eye and draw attention
-to information and links on the page. Green and blue was chosen as they are visually pleasing positive on screen colours and the light grey in the header and footer is a neutral colour that goes well with the colours on the page. 
+For the colour scheme bold colours were chosen to catch users attention. The red and blue was chosen as it represents the red and blue corners of a boxing ring. 
 <br>
 
-![Colour scheme](docs/features/colour-pallete-adobe.png)
+![Colour scheme]()
 
 ### Fonts
 
-Playfair+Display was used for the logo and headings as it looks good in a larger font size and is easy to read. 
+Lato was used for the headings as it looks good in a larger font size and is easy to read. 
 <br>
-Merriweather was used for the body text as it compliments the headings nicely and is highly readable on screen, both have back up font of sans-serif as its also easily readable on screen.
+Oswald was used for all other text as it compliments the headings nicely and is highly readable on screen, both have back up font of sans-serif as its also easily readable on screen.
 
 ### Structure
 The page is structured in a recognizable, user friendly and easy to learn way. on arriving to the site the user sees a logo with a navigation bar, with the links spaced out under the logo that highlight on mouse over.
-The website consists of four separate pages: 
-- A homepage with a section of What we do, small paragraph explaining what we do with images and links to our services page.
-- An our services page consisting of images and information detailing the services provided.
-- An about us page with a contact us section.
-- A free quote (form) page which opens in a new tab.
+The website consists of 3 separate pages: 
+- A homepage with the logo and navigation links, a rules and scoring explained section and boxing related images.
+- A quiz page which is has a create username area aswel as the main game area where the quiz questions, answers and results are displayed
+- A custom 404 page for any page not found errors.
 
 ### Wireframes
 
