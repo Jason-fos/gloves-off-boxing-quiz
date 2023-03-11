@@ -136,6 +136,11 @@ p {
     height: 1200px;
 }
 
+#punch-bag-image {
+    width: 100%;
+    height: auto;
+}
+
 /* footer */
 
 #footer-div {
