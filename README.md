@@ -420,13 +420,14 @@ You can clone the repository by following these steps:
 ## Credits
 
 ### Media
-- All images taken from pexels.com
-- W3CSchools.com was used for compatability of form components
-- Questions formthe quiz came from (https://www.radiotimes.com/ 
-  quizzes/pub-quiz-boxing)
+- All images were taken from pexels.com.
+- W3CSchools.com was used for better understanding of compatability of form elements and responsive grid design.
+- Questions for the quiz came from (https://www.radiotimes.com/ 
+  quizzes/pub-quiz-boxing).
   
 ### Code
-- 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
+- 404 page was built using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site).
+- W3CSchools.com was used for better understanding of compatability of form elements and responsive grid design.
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
