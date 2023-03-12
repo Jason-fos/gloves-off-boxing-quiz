@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
                 runQuiz();
-                document.getElementById("right-wrong-text").innerText = clearText;
+                document.getElementById("right-wrong-text").nextElementSibling.innerText = clearText;
                 document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
             }
         });
