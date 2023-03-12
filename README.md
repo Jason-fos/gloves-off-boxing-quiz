@@ -217,7 +217,7 @@ The page consists of 3 pages and 9 features.
 ## Validation
 
 ### HTML Validation
-The W3C Markup Validation Service was used to validate the HTML of the website. index.html had 2 errors, 1 spelling error and 1 stray div closing tag. 
+The W3C Markup Validation Service was used to validate the HTML of the website. 
 <details><summary>Home Page</summary>
 <img src="docs/validation/index.html-validation.png">
 </details>
