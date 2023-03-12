@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
                 runQuiz();
-                document.getElementById("right-wrong-text").nextElementSibling.innerText = clearText;
+                document.getElementById("right-wrong-text").nextElementSibling = selectText;
                 document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
             }
         });
@@ -32,7 +32,7 @@ let position = 0;
 let currentScore = 0;
 let correctText = `<h3>Correct Answer!</h3>`;
 let wrongText = `<h3>Wrong Answer!</h3>`;
-let clearText = "";
+let selectText = `<h3>Select an answer</h3>`;
 let username = "";
 let allAnswers = [];
 allAnswers[0] = [];
