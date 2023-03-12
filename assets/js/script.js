@@ -4,7 +4,6 @@ let position = 0;
 let currentScore = 0;
 let correctText = `<h3>Correct Answer!</h3>`;
 let wrongText = `<h3>Wrong Answer!</h3>`;
-let selectText = `<h3>Select an answer</h3>`;
 let username = "";
 let allAnswers = [];
 allAnswers[0] = [];
@@ -49,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkAnswer();
             } else if (this.getAttribute("id") === "nextQ-button") {
                 runQuiz();
-                document.getElementById("right-wrong-text").innerHTML = selectText;
-                document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
             }
         });
     }
@@ -70,9 +67,9 @@ function toggleRules() {
 }
 
 /**
-* createUsername function gets the username submitted by the user and
-* stores it in a variable so it can be used to display the final win/lose message and score on quiz completion
-*/
+ * createUsername function gets the username submitted by the user and
+ * stores it in a variable so it can be used to display the final win/lose message and score on quiz completion
+ */
 function createUsername() {
     username = document.getElementById("username").value;
 }
@@ -96,6 +93,7 @@ function runQuiz() {
 /**
  * the nextQuestion function changes the content of the html elements
  *  and displays the next question to the user along with the 4 potential answers
+ * resets the text and colour of the right wrong answer box
  */
 function nextQuestion() {
     document.getElementById("quiz-status").innerHTML = ("Question " + (position + 1) + " of " + questions.length);
@@ -112,6 +110,7 @@ function nextQuestion() {
     document.getElementById("label-optionC").innerHTML = choiceC;
     document.getElementById("label-optionD").innerHTML = choiceD;
 }
+    
 
 /**
  * the checkAnswer function checks the answers to each question
