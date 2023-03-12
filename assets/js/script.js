@@ -76,7 +76,7 @@ function createUsername() {
 
 /**
  * runQuiz function starts and ends the quiz
- * it calls the nextQuestion function to display the first question
+ * it calls the nextQuestion function to display the first question and each question after that
  * if currentScore drops below 0 it calls gameOver function to display the game over message on screen to user
  * otherwise it will call the winShowScore function and provide a congratulations message to user along with their final score
  */
