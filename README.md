@@ -3,7 +3,7 @@
 
 ![Mockup image](/docs/validation/am-i-responsive-image.png)
 
-[Live webpage]()
+[Live webpage](https://jason-fos.github.io/gloves-off-boxing-quiz/)
 
 ## Table of Content
 
@@ -392,7 +392,10 @@ The website was tested on the following browsers:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| None of the images load on page | Change all file paths to absolute paths | Home page image too large causing performance issues | Reduce the image size |
+| None of the images load on page | Change all file paths to absolute |
+| Home page image too big causing performance issues | Reduce size of images | 
+| Text in quiz area overflowing on small screens | write media query to reduce font size on smaller screens |
+
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
