@@ -1,31 +1,3 @@
-/**
- * wait for DOM content to load before getting all buttons
- * then adding event listeners to them
- */
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("id") === "rules-button") {
-                toggleRules();
-            } else if (this.getAttribute("id") === "submit-username") {
-                createUsername();
-                alert("Username Submitted");
-            } else if (this.getAttribute("id") === "start-quiz") {
-                runQuiz();
-            } else if (this.getAttribute("id") === "submit-answer") {
-                checkAnswer();
-            } else if (this.getAttribute("id") === "nextQ-button") {
-                runQuiz();
-                document.getElementById("right-wrong-text").innerHTML = selectText;
-                document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
-            }
-        });
-    }
-});
-
-
 // variables
 let score = 0;
 let position = 0;
@@ -56,6 +28,33 @@ allAnswers[17] = [];
 allAnswers[18] = [];
 allAnswers[19] = [];
 let answerInfo = 0;
+
+/**
+ * wait for DOM content to load before getting all buttons
+ * then adding event listeners to them
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("id") === "rules-button") {
+                toggleRules();
+            } else if (this.getAttribute("id") === "submit-username") {
+                createUsername();
+                alert("Username Submitted");
+            } else if (this.getAttribute("id") === "start-quiz") {
+                runQuiz();
+            } else if (this.getAttribute("id") === "submit-answer") {
+                checkAnswer();
+            } else if (this.getAttribute("id") === "nextQ-button") {
+                runQuiz();
+                document.getElementById("right-wrong-text").innerHTML = selectText;
+                document.getElementById("right-wrong-text").style.backgroundColor = "rgba(0, 0, 255, 0.701)";
+            }
+        });
+    }
+});
 
 /**
  * when the rules button is clicked it calls the toggleRules function
