@@ -173,7 +173,7 @@ The page consists of 3 pages and 9 features.
 
 ### Create Username
 - Allows the user to create a username for the quiz.
-- Allows the quiz to display a win or lose mesaage to the user using their username.
+- Allows the quiz to display a win or lose message to the user using their username.
 - User stories covered: 5, 10 
 
 ![create username](/docs/features/create-username.png)
